@@ -9,8 +9,7 @@ export default function Home() {
           AI-powered workspace for freelancers and agencies
         </p>
         <p className="text-gray-500 mb-8">
-          Generate proposals, contracts, and invoices with AI. 
-          Accept payments. Automate your workflow.
+          Generate proposals, contracts, and invoices with AI. Accept payments. Automate your workflow.
         </p>
         <div className="flex gap-4 justify-center">
           
@@ -30,7 +29,7 @@ export default function Home() {
           <p>Status: Backend Operational</p>
           <p className="mt-2">
             <span className="inline-block w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-            InvoiceAI ProposalAI ContractAI PaymentAI
+            InvoiceAI • ProposalAI • ContractAI • PaymentAI
           </p>
         </div>
       </div>
