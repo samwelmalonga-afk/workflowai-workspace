@@ -1,6 +1,5 @@
-﻿# Write the content to the file
-Set-Content -Path components/ToolLayout.tsx -Value @'
-export default function ToolLayout({ title, description, children, backLink = '/dashboard', backText = 'Back to Dashboard' }) {
+
+export default function ToolLayout({ title, description, children, backLink = '/dashboard', backText = 'Back to Dashboard' }: { title: string, description: string, children: React.ReactNode, backLink?: string, backText?: string }) {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -14,12 +13,3 @@ export default function ToolLayout({ title, description, children, backLink = '/
     </div>
   )
 }
-'@
-
-# Verify it has content
-(Get-Item components/ToolLayout.tsx).length
-
-# Commit and push
-git add components/ToolLayout.tsx
-git commit -m "Add ToolLayout component content"
-git push origin main
