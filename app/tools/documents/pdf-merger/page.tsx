@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import ToolLayout from '../../../components/Toollayout'
+import ToolLayout from '../../../components/ToolLayout'
 
 export default function PDFMerger() {
   const [files, setFiles] = useState<File[]>([])
