@@ -12,7 +12,11 @@ interface PageProps {
 
 export default async function ClientPortalPage({ params }: PageProps) {
   const { token } = params;
-  const supabase = createServerComponentClient({ cookies });
+  const supabase = createServerClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  { cookies }
+);
 
   // 1. FETCH CLIENT BY PORTAL TOKEN (PUBLIC ACCESS)
   const { data: client, error: clientError } = await supabase
