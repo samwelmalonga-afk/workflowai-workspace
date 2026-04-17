@@ -2,12 +2,12 @@
   "name": "workflowai-workspace",
   "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "prebuild": "mkdir -p ./components && printf 'export default function ToolLayout({title,description,children,backLink=\"/dashboard\",backText=\"Back to Dashboard\"}:any){return(<div className=\"min-h-screen bg-gray-50\"><div className=\"max-w-7xl mx-auto px-4 py-8\"><div className=\"mb-6\"><a href={backLink}>← {backText}</a><h1>{title}</h1><p>{description}</p></div><div>{children}</div></div></div>)}' > ./components/ToolLayout.tsx",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+"scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "lint": "next lint"
+},
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.90.0",
