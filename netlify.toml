@@ -1,5 +1,5 @@
 [build]
-  command = command = "mkdir -p components && echo 'export default function ToolLayout({title,description,children,backLink=\"/dashboard\",backText=\"Back to Dashboard\"}:any){return(<div className=\"min-h-screen bg-gray-50\"><div className=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8\"><div className=\"mb-6\"><a href={backLink}>← {backText}</a><h1>{title}</h1><p>{description}</p></div><div>{children}</div></div></div>)}' > components/ToolLayout.tsx && npm run build"
+  command = "npm run build"
   publish = ".next"
   functions = "netlify/functions"
 
